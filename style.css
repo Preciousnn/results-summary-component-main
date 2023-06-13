@@ -104,7 +104,6 @@ border-radius: 20px;
     justify-content: space-between;
 }
 
-/* So for specificity, here's what I was expecting... Might give you more marks **winks** */
 
 .skills-card.reaction {
     color: hsl(0, 100%, 67%);
@@ -125,12 +124,6 @@ border-radius: 20px;
     color: hsl(234, 85%, 45%);
     background-color: hsl(234, 85%, 45%, 0.1);
 }
-
-/* So by doing it like this, you know that you are explicitly targeting certain blocks */
-/* And you can re-use that .reaction class for another thing elsewhere, rather than locking it down */
-/* reaction is pretty generic and in large codebases, you might find yourself writing another .reaction in another part of the project */
-/* Thereby conflicting themselves. When you have like 5k lines of CSS, it becomes a problem trying to track down why some things are conflicting */
-/* So best to use specificity while you can :) */
 
 .bold-text{
     color:  hsl(224, 30%, 27%);    
@@ -266,10 +259,6 @@ button.action {
         border-radius: 20px;
     }
 
-    /* .results-container{
-        width: 250px;
-    } */
-
     .result-display{
         border-radius: 20px;
         padding: 30px;
@@ -295,10 +284,6 @@ button.action {
         font-size: 0.8rem;
     }
 
-    /* h3{
-        font-size: 1rem;
-        font-weight: 800;
-    } */
     .skills-card {
         margin-bottom: 10px;
         /* margin-top: 20px; */
